@@ -38,7 +38,8 @@ export default function BlogDetail(){
                     src={`http://localhost:1337${blog.thumbnail.formats.thumbnail.url}`}
                     alt=""
                 />
-        <ReactMarkdown>{blog.content}</ReactMarkdown>
+        <ReactMarkdown children={blog.content} transformImageUri={uri => uri.startsWith("http") ? uri : `${process.env.REACT_APP_IMAGE_URL}${uri}`}/>
+        
         <hr />
         <Link to="/blog">&larr; Back to the posts list</Link>
       </div>

@@ -1,6 +1,6 @@
-# ReactJS Book Store
+# ReactJS Blog App
 
-The idea is to demonstrate how to to build a CRUD application with facebook's ReactJS and Redux.
+This is a blog app made by intern student from Politeknik Tuanku Syed Sirajuddin.
 
 ## Preview
 <p align="center">
@@ -9,15 +9,11 @@ The idea is to demonstrate how to to build a CRUD application with facebook's Re
 
 ## Prerequisite
 * Nodejs v6+
-* yarnpkg (optional)
-
 
 ## Getting Started
 
-1. Clone the project from git (git clone https://github.com/BnSalahFahmi/book-store.git).
-2. Go to 'book-store' directory.
-3. Run `yarn install` or `npm install`.
-4. Run `yarn start` or `npm start`.
+1. Run `yarn install` or `npm install`.
+2. Run `yarn start` or `npm start`.
 
 
 Open [http://localhost:3000](http://localhost:3000)<br>
@@ -37,7 +33,4 @@ Open [http://localhost:3000](http://localhost:3000)<br>
 
 ## Contributors  
 
-**@author:** 'Fahmi BEN SALAH *< [fahmii.bensalah@gmail.com](mailto:fahmii.bensalah@gmail.com) >*' 
-
-### Contributing
-If you like the project, shoot a :star2: and feel free to fork & send PR anytime.
+**@author:** 'Wan Zafirzan Bin Wan Tarmizan || Nitya Sathu Om >*' 

@@ -12,7 +12,6 @@ import { ToastContainer } from 'react-toastify';
 import Dashboard from './components/dashboard';
 import BlogPage from './components/BlogPage';
 import BlogDetail from './components/BlogDetail';
-import Post from './components/Post';
 import About from './components/about';
 import Contact from './components/contact';
 import NotFound from './components/not-found';
@@ -58,16 +57,22 @@ const App = () => {
             </ul>}
           </div>
         </nav>
+
+        <div className="content">
+        <Switch>
+          <Route exact path="/" component={Dashboard} />
+          </Switch>
+        </div>
+
         <div className="container">
           <Switch>
-          <Route exact path="/" component={Dashboard} />
               <Route exact path="/blog" component={BlogPage} />
               <Route path="/blog/:id" component={BlogDetail} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/about" component={About} />
-            <Route component={NotFound} />
           </Switch>
         </div>
+        
       </div>
     </Router>
   );

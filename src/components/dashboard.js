@@ -124,6 +124,7 @@ export class Dashboard extends Component {
       <section className='footer-subscription'>
         
       </section>
+      
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>

@@ -28,16 +28,14 @@ export default function BlogDetail(){
         <h1>{blog.title}</h1>
         <hr />
         <div className="author">
-          <div>
-            {moment(blog.published).format("MMMM Do, YYYY")}
-          </div>
+        <img src={`http://localhost:1337${blog.thumbnail.formats.thumbnail.url}`} alt="Author" />
+        <div>
+          Published {' '} on {' '}
+          {moment(blog.Created_at).format("MMMM Do, YYYY")}
         </div>
+      </div>
         <hr />
-        <img
-                    className="img-fluid"
-                    src={`http://localhost:1337${blog.thumbnail.formats.thumbnail.url}`}
-                    alt=""
-                />
+
         <ReactMarkdown children={blog.content} transformImageUri={uri => uri.startsWith("http") ? uri : `${process.env.REACT_APP_IMAGE_URL}${uri}`}/>
         
         <hr />

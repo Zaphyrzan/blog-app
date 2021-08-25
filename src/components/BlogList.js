@@ -6,7 +6,7 @@ export default function BlogList({ blogs }){
         <>
         <div className="row">
         {blogs.length === 0 ? (
-            <h3>No Blog</h3>
+            <h3>No Blog Published</h3>
         ) : (
             blogs.map((blog) => {
                 return (

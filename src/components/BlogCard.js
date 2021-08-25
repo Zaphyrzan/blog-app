@@ -10,7 +10,7 @@ export default function BlogCard({data}){
             
             <div className="card-body">
                 <h5 className="card-title">{data.title}</h5>
-                <p className="card-text">{data.description}</p>
+                <p className="card-text">{data.summary}</p>
             
                 <Link to={`/blog/${data.id}`} className="btn btn-primary">Check now</Link>
             </div>

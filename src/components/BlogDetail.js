@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 import BlogAPI from "../config/BlogAPI";
 import { Link } from 'react-router-dom';
 import ReactMarkdown from "react-markdown";
-import Moment from 'moment';
+import moment from 'moment';
 
 
 export default function BlogDetail(){
@@ -24,25 +24,23 @@ export default function BlogDetail(){
     }
 
     return (
-        <div className="row justify-content-center align-items-center">
-            <div className="col-md-12">
-                <Link to="/blog">Go Back</Link>
-            </div>
-            <div className="col-md-6">
-                <h2>{blog.title}</h2>
-                <p>
-                    {Moment(blog.Created_at).format("MMMM Do, YYYY")}
-                </p>
-                <p></p>
-                <img
+        <div className="post">
+        <h1>{blog.title}</h1>
+        <hr />
+        <div className="author">
+          <div>
+            {moment(blog.published).format("MMMM Do, YYYY")}
+          </div>
+        </div>
+        <hr />
+        <img
                     className="img-fluid"
                     src={`http://localhost:1337${blog.thumbnail.formats.thumbnail.url}`}
                     alt=""
                 />
-                <p></p>
-                <ReactMarkdown>{blog.description}</ReactMarkdown>
-            </div>
-
-        </div>
-    )
+        <ReactMarkdown>{blog.content}</ReactMarkdown>
+        <hr />
+        <Link to="/blog">&larr; Back to the posts list</Link>
+      </div>
+    );
 }

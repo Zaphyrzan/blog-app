@@ -223,11 +223,6 @@ body{
   background-color: #ffffff;
 }
 
-
-h1 {
-  color: var(--green);
-}
-
 .App {
   height: 75vh;
   margin-top: 15vh;

@@ -1,11 +1,7 @@
 # ReactJS Blog App
 
-This is a blog app made by intern student from Politeknik Tuanku Syed Sirajuddin.
-
-## Preview
-<p align="center">
-	<img src='preview.gif' alt='Preview'>
-</p>
+This is a blog app made by intern student from Politeknik Tuanku Syed Sirajuddin
+In collaboration with ITBA Malang, and ALA Startup.
 
 ## Prerequisite
 * Nodejs v6+

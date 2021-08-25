@@ -3,6 +3,9 @@ import React from 'react';
 import { useParams } from "react-router";
 import BlogAPI from "../config/BlogAPI";
 import { Link } from 'react-router-dom';
+import ReactMarkdown from "react-markdown";
+import Moment from 'moment';
+
 
 export default function BlogDetail(){
     const {id} = useParams();
@@ -27,6 +30,9 @@ export default function BlogDetail(){
             </div>
             <div className="col-md-6">
                 <h2>{blog.title}</h2>
+                <p>
+                    {Moment(blog.Created_at).format("MMMM Do, YYYY")}
+                </p>
                 <p></p>
                 <img
                     className="img-fluid"
@@ -34,7 +40,7 @@ export default function BlogDetail(){
                     alt=""
                 />
                 <p></p>
-                <p>{blog.description}</p>
+                <ReactMarkdown>{blog.description}</ReactMarkdown>
             </div>
 
         </div>

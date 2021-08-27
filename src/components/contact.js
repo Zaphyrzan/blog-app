@@ -4,7 +4,6 @@ import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from 'react-toastify';
 import emailjs from 'emailjs-com';
 import PropTypes from 'prop-types';
-import photo from '../assets/img/photo.jpg';
 
 const Contact = () => {
     const {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import photo from '../assets/img/photo.jpg';
 import pageNotFound from '../assets/img/page-not-found.png';
 
 export class NotFound extends Component {

@@ -10,6 +10,8 @@ In collaboration with ITBA Malang, and ALA Startup.
 
 1. Run `yarn install` or `npm install`.
 2. Run `yarn start` or `npm start`.
+3. Run backend at https://github.com/Zaphyrzan/strapi-postgreSQL-main
+4. Run pgadmin and create postgresql database
 
 
 Open [http://localhost:3000](http://localhost:3000)<br>

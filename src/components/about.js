@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import './index.css';
-import photo from '../assets/img/photo.jpg';
 
 export default () =>{
     return (
